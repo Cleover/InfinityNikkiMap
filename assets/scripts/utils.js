@@ -3,7 +3,7 @@
 let resourceControl = {
   env: "dev",
   lang: {
-    default: "zh-Hans",
+    default: "en",
     selected: "",
     data: { en: null, "zh-Hans": null },
   },
@@ -24,10 +24,8 @@ let resourceControl = {
   },
 
   loadEnv: function () {
-    if (location.hostname === "map.nikkimomo.cc") {
+    if (location.hostname === "map.nikki.moe") {
       this.env = "prod";
-    } else if (location.hostname === "map2.nikkimomo.cc") {
-      this.env = "uat";
     }
   },
 
