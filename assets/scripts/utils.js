@@ -138,7 +138,7 @@ let resourceControl = {
   },
 
   _assetsHost: function () {
-    return this.env === "prod" ? "https://map.nikki.moe" : "./assets";
+    return "./assets"; // Previously: return this.env === "prod" ? "https://map.nikki.moe" : "./assets";
   },
 
   isMobile: function () {
